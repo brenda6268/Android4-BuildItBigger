@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/display_margin"
+    android:paddingLeft="@dimen/display_margin"
+    android:paddingRight="@dimen/display_margin"
+    android:paddingTop="@dimen/display_margin"
+    tools:context="com.example.android.androidjokes.jokeDisplay">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/joke"
+        android:id="@+id/jokeimage"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/jokertext"
+        android:layout_below="@+id/jokeimage"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/jokerplacehold"
+        android:layout_below="@+id/jokeimage"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:text="@string/place_hold_words"
+        android:gravity="center"
+        />
+</RelativeLayout>
